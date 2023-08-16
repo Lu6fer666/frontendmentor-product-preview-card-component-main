@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+
+    /* PRIMARY COLORS*/ 
+    
+    --clprimary-darkcyan: hsl(158, 36%, 37%);
+    --clprimary-cream: hsl(30, 38%, 92%);
+    
+    /* NEUTRAL COLORS */
+    
+    --clneutral-verydarkblue: hsl(212, 21%, 14%);
+    --clneutral-darkgrayishblue: hsl(228, 12%, 48%);
+    --clneutral-white: hsl(0, 0%, 100%);
+
+    /*FONTS*/
+    --ffmain: 'montserrat';
+    --ffsecondary: 'fraunces';
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    background-color: var(--clprimary-cream);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.card {
+    background-color: var(--clneutral-white);
+    border-radius: 10px;
+    box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
+    overflow: hidden;
+    max-width: 22rem;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+
+}
+
+.imgWrapper img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.cardBody {
+    padding: 2em;
+}
+
+h2 {
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--clneutral-darkgrayishblue);
+    letter-spacing: 5px;
+}
+h1 {
+    font-family: "Fraunces";
+    line-height: 1em;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    }
+p {
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: var(--clneutral-darkgrayishblue);
+    line-height: 1.5em;
+}
+
+.divprice {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.price {
+    font-family: "Fraunces";
+    font-size: 32px;
+    color: var(--clprimary-darkcyan);
+}
+
+.sold {
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: var(--clneutral-darkgrayishblue);
+    text-decoration: line-through; 
+    margin-left: 1em;
+}
+
+.btn-payment {
+    font-family: "montserrat";
+    font-weight: 700;
+    color: var(--clneutral-white);
+    background-color: var(--clprimary-darkcyan);
+    margin-top: .8em;
+    border-radius: 8px;
+    padding: 15px 20px 15px 20px;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+.btn-payment img,
+.btn-payment span {
+  vertical-align: middle;
+}
+.btn-payment img {
+    padding-right: 0.6rem;
+}
+
+@media only screen and (min-width: 980px){
+
+    }
